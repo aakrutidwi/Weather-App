@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CountDown Timer Javascript</title>
+    <link rel="stylesheet" href="customcss/one.css" />
+  </head>
+  <body>
+    <div class="main">
+    
+      <div class="overlay">
+      
+        <div class="title">Count Down To Travel
+            <p id="end-date"></p>
+        </div>
+        <div class="title"></div>
+
+        <div class="col" id="count">
+          <div>
+            <input type="text" readonly />
+            <br />
+            <label for="">Days</label>
+          </div>
+
+          <div>
+            <input type="text" readonly />
+            <br />
+            <label for="">Hours</label>
+          </div>
+
+          <div>
+            <input type="text" readonly />
+            <br />
+            <label for="">Minutes</label>
+          </div>
+
+          <div>
+            <input type="text" readonly />
+            <br />
+            <label for="">Seconds</label>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script  src = "app.js">
+     
+      document.addEventListener("DOMContentLoaded", function() {
+      const endDate = "25 July 2022 08:20:00 PM";
+      document.getElementById("end-date").innerText = endDate;
+    });
+    </script>
+  </body>
+</html>
